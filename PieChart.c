@@ -5,7 +5,7 @@
 #include <math.h>
 #include "Object.h"
 
-void PieChart(Object* objects, size_t length, int fieldIndex)
+void PieChart(Object* objects, size_t length, int selectedField)
 {
     float total = 0;
     int screen_size_x, screen_size_y;
@@ -13,7 +13,7 @@ void PieChart(Object* objects, size_t length, int fieldIndex)
     int colors[] = {COLOR_RED, COLOR_GREEN, COLOR_BLUE, COLOR_YELLOW, COLOR_MAGENTA, COLOR_CYAN, COLOR_WHITE};
     int color_index = 0;
 
-    if (fieldIndex == 2)
+    if (selectedField == 2)
     {
       for (size_t i = 0; i < length; i++)
       {
@@ -45,7 +45,7 @@ void PieChart(Object* objects, size_t length, int fieldIndex)
     }
 
     }
-      if (fieldIndex == 1){
+      if (selectedField == 1){
       for (size_t i = 0; i < length; i++) {
         total += (float)objects[i].floatNum;
     }
