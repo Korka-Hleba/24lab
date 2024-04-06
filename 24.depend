@@ -1,0 +1,79 @@
+# depslib dependency file v1.0
+1712389657 source:c:\users\user\desktop\24\barchart.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<curses.h>
+	"Object.h"
+
+1711652049 c:\users\user\desktop\24\object.h
+
+1712389716 source:c:\users\user\desktop\24\piechart.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<curses.h>
+	<math.h>
+	"Object.h"
+
+1712390400 source:c:\users\user\desktop\24\read.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Object.h"
+
+1712389835 source:c:\users\user\desktop\24\sort.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Object.h"
+
+1711635334 source:c:\users\user\desktop\24\sortcompare.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Object.h"
+
+1712313583 source:c:\users\user\desktop\24\addelem.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<curses.h>
+	"Object.h"
+
+1712390417 source:c:\users\user\desktop\24\removeelem.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Object.h"
+
+1712390249 source:c:\users\user\desktop\24\save.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Object.h"
+
+1712389870 source:c:\users\user\desktop\24\table.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Object.h"
+
+1712387542 source:c:\users\user\desktop\24\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<curses.h>
+	"base.h"
+	"Object.h"
+
+1712389870 c:\users\user\desktop\24\base.h
+	"Object.h"
+
+1712245349 c:\pdcurses\pdcurses-3.9\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+	<stdbool.h>
+
