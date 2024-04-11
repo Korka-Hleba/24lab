@@ -3,7 +3,7 @@
 #include <string.h>
 #include "Object.h"
 
-void Save(Object *objects, size_t *length, char *filename) {
+void Save(Object *objects, size_t *length, const char *filename) {
     FILE *file = fopen(filename, "w");
     if (file == NULL) {
         printf("Error opening file\n");
