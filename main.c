@@ -14,11 +14,9 @@ int main()
 
     objects = (Object*)malloc(num * sizeof(Object));
 
-
     Table(objects, size);
     int choose_d;
     int choose_f;
-
 
     for (int i = 0; i < size; i++) {
         printf("Object %d: text=%s, decimal=%.2f, integer=%d\n", i+1, objects[i].text, objects[i].floatNum, objects[i].intNum);
@@ -30,6 +28,7 @@ int main()
         int sorting;
         int order;
         printf("Choose an action: \n1.Add Element\n2.Save to file\n3.Read from file\n4.Sorting\n5.Printing Diagram\n6.Remove Element\n7.Print the table\n8.Exit\n");
+
         scanf("%d", &choice);
 
         switch(choice)
@@ -101,6 +100,7 @@ int main()
                 break;
 
             case 5:
+
                 printf("Choose the diagram:\n1. Bar Chart \n2. Pie Chart\n");
                 scanf("%d", &choose_d);
                 printf("Choose the field:\n1. float \n2. integer\n");
@@ -163,7 +163,6 @@ int main()
 
         }
 
-    }
 
     getch();
     endwin();

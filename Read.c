@@ -22,6 +22,7 @@ void Read(Object **objects, size_t *length, const char *filename)
     }
 
     while(fscanf(file, "%s%f%d", &(*objects)[*length].text, &(*objects)[*length].floatNum, &(*objects)[*length].intNum)==3)
+
      {
          *length++;
          if(*length>=MAX_LENGTH)
