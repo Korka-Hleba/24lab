@@ -5,13 +5,13 @@
 
 void Table(Object* objects, size_t *length);
 
-void AddElem(Object *objects, size_t *length);
+void AddElem(Object **objects, size_t *length);
 
 void RemoveElem(Object *objects, size_t *length, size_t index);
 
-void Save(Object *objects, size_t *length, const char *filename);
+void Save(Object *objects, size_t *length);
 
-void Read(Object *objects, size_t *length, const char *filename);
+void Read(Object **objects, size_t *length, const char *filename);
 
 void Sort(Object* objects, size_t length, int order, int (*compare)(const void *, const void *));
 

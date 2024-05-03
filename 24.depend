@@ -16,7 +16,7 @@
 	<math.h>
 	"Object.h"
 
-1712390400 source:c:\users\user\desktop\24\read.c
+1712818176 source:c:\users\user\desktop\24\read.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -34,20 +34,20 @@
 	<string.h>
 	"Object.h"
 
-1712313583 source:c:\users\user\desktop\24\addelem.c
+1714742933 source:c:\users\user\desktop\24\addelem.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<curses.h>
 	"Object.h"
 
-1712390417 source:c:\users\user\desktop\24\removeelem.c
+1714743201 source:c:\users\user\desktop\24\removeelem.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Object.h"
 
-1712390249 source:c:\users\user\desktop\24\save.c
+1713010902 source:c:\users\user\desktop\24\save.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -59,7 +59,7 @@
 	<string.h>
 	"Object.h"
 
-1712387542 source:c:\users\user\desktop\24\main.c
+1714742851 source:c:\users\user\desktop\24\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -67,7 +67,7 @@
 	"base.h"
 	"Object.h"
 
-1712389870 c:\users\user\desktop\24\base.h
+1714743458 c:\users\user\desktop\24\base.h
 	"Object.h"
 
 1712245349 c:\pdcurses\pdcurses-3.9\curses.h

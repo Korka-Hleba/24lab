@@ -3,17 +3,25 @@
 #include <string.h>
 #include "Object.h"
 
-void Save(Object *objects, size_t *length, const char *filename) {
+void Save(Object *objects, size_t *length)
+{
+    char filename[50];
+    printf("Enter file name" );
+    scanf("%s", &filename);
     FILE *file = fopen(filename, "w");
-    if (file == NULL) {
+    if (file == NULL)
+    {
         printf("Error opening file\n");
         return;
     }
 
-    for (size_t i = 0; i < length; i++) {
+    for (size_t i = 0; i < length; i++)
+    {
         fprintf(file, "%s %f %d\n", objects[i].text, objects[i].floatNum, objects[i].intNum);
     }
 
     fclose(file);
     printf("Data successfully saved to %s\n", filename);
+
+    return filename;
 }
