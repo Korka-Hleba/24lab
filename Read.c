@@ -3,7 +3,9 @@
 #include <string.h>
 #include "Object.h"
 
-void Read(Object *objects, size_t *length, char *filename)
+#define MAX_LENGTH 100
+
+void Read(Object **objects, size_t *length, const char *filename)
 {
     FILE *file = fopen(filename, "r");
     if (file == NULL)
@@ -12,9 +14,22 @@ void Read(Object *objects, size_t *length, char *filename)
         return;
     }
 
-    for (size_t i = 0; i < length; i++) {
-        fscanf(file, "%s %f %d", objects[i].text, &objects[i].floatNum, &objects[i].intNum);
+    *length = 0;
+    *objects = malloc(MAX_LENGTH * sizeof(Object));
+    if (*objects == NULL) {
+        printf("error\n");
+        return;
     }
-    fclose(file);
 
+    while(fscanf(file, "%s%f%d", &(*objects)[*length].text, &(*objects)[*length].floatNum, &(*objects)[*length].intNum)==3)
+     {
+         *length++;
+         if(*length>=MAX_LENGTH)
+         {
+             *objects = realloc(*objects, (*length + 1) * sizeof(Object));
+             printf("Exceeded maximum number of objects.\n");
+             break;
+         }
+     }
+     fclose(file);
 }
